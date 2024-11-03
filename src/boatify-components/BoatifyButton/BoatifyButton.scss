@@ -1,0 +1,21 @@
+@import "../../styles/theme.scss";
+
+.boatify-button {
+	@include app-button;
+}
+
+.boatify-button--register,
+.boatify-button--login {
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-bottom: 16px;
+	&:active,
+	&:focus {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+.boatify-button--forgot-password,
+.boatify-button--reset-password {
+	margin: 6px 0 24px;
+}
