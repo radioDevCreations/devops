@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setOrderPage } from "@/redux/slices/orderSlice";
 import "./BoatifyStepper.scss";
 import Children from "@/utilities/Children";
+import { ReactNode } from "react";
 
 interface BoatifyStepperProps extends Children {
 	steps: string[];

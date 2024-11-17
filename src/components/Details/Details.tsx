@@ -14,6 +14,7 @@ import BoatifyInputProps from "@/utilities/BoatifyInputProps";
 import InputType from "@/utilities/InputType";
 import httpClient from "@/axios/httpClient";
 import BoatifyStepper from "@/boatify-components/BoatifyStepper/BoatifyStepper";
+import RPContainer from "../RPContainer/RPContainer";
 
 const Details = () => {
 	const dispatch = useDispatch();
@@ -74,7 +75,9 @@ const Details = () => {
 	return (
 		<form className="details" onSubmit={handleSubmit}>
 			<section className="details__board">
-				<BoatifyStepper steps={steps} currentPosition={orderPage} />
+				<BoatifyStepper steps={steps} currentPosition={orderPage}>
+					<RPContainer currentPosition={orderPage} />
+				</BoatifyStepper>
 			</section>
 		</form>
 	);

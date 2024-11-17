@@ -2,6 +2,7 @@ import "./MapLink.scss";
 import Image from "next/image";
 import IMAGE from "../../../public/links";
 import Captions from "@/captions/captions";
+import Link from "next/link";
 
 const MapLink = () => {
 	return (
@@ -14,9 +15,9 @@ const MapLink = () => {
 				height={56}
 				width={56}
 			/>
-			<a className="map-link__text2" href="/harbours">
+			<Link className="map-link__text2" href="/harbours">
 				{Captions.MAP_LINK_TEXT2}
-			</a>
+			</Link>
 		</article>
 	);
 };
